@@ -1,0 +1,13 @@
+'''
+
+Este algoritmo realiza a conversão de distâncias em Km para milhas
+
+'''
+
+Km = float(input('Digite a distância em kilometros: '))
+
+if Km > 1:
+    dM = float (Km / 1.60934)
+    print ('A distância em milhas é: %.2f' %dM)
+elif Km <= 0:
+    print('Distância inválida')
