@@ -14,7 +14,7 @@ A organização será feita em ordem crescente de dificuldade sendo marcados com
 ###  Técnologia
 
 <p display="inline-block">
-  <https://logodownload.org/wp-content/uploads/2019/10/python-logo.png" alt="c-logo"/>
+  <img width="48" src=https://logodownload.org/wp-content/uploads/2019/10/python-logo.png" alt="c-logo"/>
   
 
 
