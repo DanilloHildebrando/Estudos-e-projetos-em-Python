@@ -1,0 +1,9 @@
+#Descrição: O algoritmo recebe um n de input e enquanto ele for maior que i deve se somar mais 1 ao i e fazê-lo ao quadrado
+
+if __name__ == '__main__':
+    i = 0
+    n = int(input())
+    while(i<n):
+        op = i * i
+        print(op)
+        i+=1
