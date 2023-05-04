@@ -1,0 +1,30 @@
+# Descrição do desafio: A partir de um número que é dado pela plataforma, criei um programa que o teste, veririfca se é par ou ímpar, seu tamanho e dependendo retorna frases
+
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+n = int(input('').strip())
+test = n % 2
+if test != 0:
+    print('Weird')
+elif test == 0 and n >= 2 and n <= 5 :
+    print('Not Weird')
+elif test == 0 and n >= 6 and n <= 20:
+    print('Weird')
+elif test == 0 and n > 20:
+    print('Not Weird')
+    
+    
+    
+
+
+#if __name__ == '__main__':
+    #n = int(input().strip())
