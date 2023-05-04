@@ -1,0 +1,31 @@
+# Descrição: A partir de uma lista pré-definbida pelo site e manipulação dos dados solicitados pelo desafio, resultou-se neste código:
+
+if __name__ == '__main__':
+    
+    lst1 = []
+    y = {}
+    
+    for i in range(int(input())):
+        name = input()
+        score = float(input())
+        lst1.append(score)
+        y[name]=score
+    
+    lst_res = sorted(lst1)
+    if (lst_res[0] == lst_res[1] and lst_res[0] == lst_res[2]):
+        lst_res.pop(2)
+        lst_res.pop(1)
+        lst_res.pop(0)
+    elif(lst_res[0] == lst_res[1]):
+        lst_res.pop(1)
+        lst_res.pop(0)
+    else:
+        lst_res.pop(0)
+    while(len(lst_res) != 1):
+        lst_res.pop()
+    for n, value in (sorted(y.items())):
+        if value == lst_res[0]:
+            lst = []
+            lst = n
+            print(lst)
+    
