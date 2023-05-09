@@ -9,7 +9,7 @@ Aqui estão os resultados de exercícios que resolvi em cursos múltiplos utiliz
 
 ##   Organização
 
-A organização será feita em ordem crescente de dificuldade sendo marcados como (B) todos os mais básicos e enumerados em suas dificuldades, após isso, considerando uso de funções(F), programação orientada a objetos(POO) serão marcados os posteriores.  
+A organização será feita em ordem crescente de dificuldade sendo marcados como (Básico) todos os mais básicos, após isso, considerando a lógica e manejo da linguagem (Intermediário) e marcarei como (Projeto) todos que resultarem em programas maiores.  
 Também vou considerar exercícios que resolvi na plataforma HackerRank, de modo que haverá uma marcação e o enunciado, em inglês como está no site, no repositório.
 
 Para mais informações sobre o HackerRank, acessar: https://www.richgarcia.com.br/hacker-rank-oque-e/
