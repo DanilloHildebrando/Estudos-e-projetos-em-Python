@@ -1,0 +1,28 @@
+class Animal:
+
+    def __init__(self):
+        print("Animal Criado")
+        
+    def imprimir(self):
+        print("Este é um animal")
+        
+    def comer(self):
+        print("Hora de comer")
+        
+    def som(self):
+        pass
+    
+class Cachorro(Animal):
+    
+    def __init__(self):
+        Animal.__init__(self)
+        print("Cachorro criado")
+        
+    def som(self):
+        print("Au au au!")
+        
+        
+Rex = Cachorro()
+
+Rex.som()
+Rex.comer()
