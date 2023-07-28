@@ -1,0 +1,45 @@
+class Veiculo:
+
+    def __init__(self, marca, ano):
+        self.marca = marca
+        self.modelo = ano
+        
+    def acelerar(self):
+        pass
+        
+    def frear(self):
+        pass
+        
+
+class Carro(Veiculo):
+
+    def acelerar(self):
+        print("Carro acelerando")
+        
+    def frear(self):
+        print("Carro freando")
+        
+class Moto(Veiculo):
+
+        
+    def acelerar(self):
+        print("Moto acelerando")
+        
+    def frear(self):
+        print("Moto freando")
+        
+    def empinar(self):
+        print("Moto empinando")
+
+        
+lista_veiculos = [Carro("Palio", "2001"), Moto("Honda", "2006")]
+
+for item in lista_veiculos:
+    item.acelerar()
+    
+    item.frear()
+    
+    if isinstance(item, Moto):
+        item.empinar()
+    
+    print("------")
