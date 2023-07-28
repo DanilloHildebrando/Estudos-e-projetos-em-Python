@@ -1,0 +1,15 @@
+class Livro():
+    
+    def __init__(self, nome, editora):
+        self.nome= nome
+        self.editora= editora
+        
+    
+    def imprime(self, nome, editora):
+        print("Este é o livro %s da editora %s" %(nome, editora))
+        
+        
+Livro1 = Livro("Oi", "Dan")
+
+Livro1.imprime("Oi", "Dan")
+        
