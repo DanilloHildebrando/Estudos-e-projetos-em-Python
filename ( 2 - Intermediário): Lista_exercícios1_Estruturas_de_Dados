@@ -1,0 +1,93 @@
+Exercíco 2 - Cálculo de média
+Exercício 3 - Menor valor
+Exercício 4 - Múltiplos de 3
+Exercício 5 - Vetor com o dobro
+Exercício 6 - Soma dos elementos do vetor
+
+elementos = 15
+vetor = [0] * elementos
+menor = 99999999
+multTres = []
+vetorDobro = [0] * elementos
+
+for posicao in range(elementos):
+    vetor[posicao] = posicao * 2 + 1
+    vetorDobro[posicao] = vetor[posicao] * 2 # Exercício 5
+    if vetor[posicao] < menor: # Exercício 3
+        menor = vetor[posicao] # Exercício 3
+    if vetor[posicao] % 3 == 0: # Exercício 4
+        multTres.append(vetor[posicao]) # Exercício 4
+    if vetorDobro[posicao] % 2 == 0: # Exercício 6
+        somaDobro = sum(vetorDobro) # Exercício 6
+        
+soma = sum(vetor) # Exercício 2
+media = soma / elementos # Exercício 2
+
+
+
+
+print(vetor)
+print(soma) # Exercício 2
+print(media) # Exercício 2
+print(menor) # Exercício 3
+print(multTres) # Exercício 4
+print(vetorDobro) # Exercício 5
+print(somaDobro) # Exercício 6
+
+
+Exercíco 2 - Cálculo de média
+Exercício 3 - Menor valor da linha
+Exercício 4 - Menor valor da coluna
+Exercício 5 - Matriz com o dobro
+Exercício 6 - Encontrar a posição do maior elemento da matriz
+
+
+linhas = 5
+colunas = 6
+matriz = [[0] * colunas for _ in range(linhas)]
+maior = 0
+menoresValores = []
+menores_valores_colunas = []
+matrizDobro = [[0] * colunas for _ in range(linhas)]
+
+
+
+for posicao_linha in range(linhas):
+    for posicao_coluna in range(colunas):
+        matriz[posicao_linha][posicao_coluna] = posicao_linha * posicao_coluna
+        matrizDobro[posicao_linha][posicao_coluna] = matriz[posicao_linha][posicao_coluna] * 2 # Exercício 5
+        if matriz[posicao_linha][posicao_coluna] > maior:
+            maior_posicao_l = posicao_linha
+            maior_posicao_c = posicao_coluna
+    
+
+for linha in matriz:
+    menor_valor = linha[0]  # # Exercicio 3
+    for valor in linha: # Exercicio 3
+        if valor < menor_valor: # Exercicio 3
+            menor_valor = valor # Exercicio 3
+        menoresValores.append(menor_valor) # Exercicio 3
+        
+
+for posicao_coluna in range(colunas):
+    menor_valor = matriz[0][posicao_coluna]  # Exercicio 4
+    for posicao_linha in range(linhas):
+        valor = matriz[posicao_linha][posicao_coluna]
+        if valor < menor_valor:
+            menor_valor = valor
+    menores_valores_colunas.append(menor_valor)
+
+
+        
+        
+        
+somaMatriz = sum(sum(linha) for linha in matriz)    # Exercicio 2   
+media = somaMatriz / linhas * colunas # Exercicio 2 
+
+
+print(matriz)
+print(media) # Exercicio 2 
+print(menoresValores) # Exercicio 3
+print(menores_valores_colunas) # Exercício 4
+print(matrizDobro) # Exercício 5
+print(maior_posicao_l, maior_posicao_c) # Exercício 6
