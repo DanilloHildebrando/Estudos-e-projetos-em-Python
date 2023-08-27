@@ -1,0 +1,129 @@
+# Exercício 1
+
+idades = [25, 30, 22, 28, 35]  
+media = sum(idades) / len(idades)
+print(media)
+
+# Exercício 2
+
+estudante = {  "Nome": [ "Ze da manga", "Jose", "Joshep"],
+               "Idade": [25,32,75],
+               "Curso":["Ciências Ocultas", "Artes Avançadas", "Defesa Contra as Artes das Trevas\n\n"]
+
+}
+print(estudante["Nome"]) 
+
+print(estudante["Idade"])
+
+print(estudante["Curso" ])
+
+# Exercicio 3
+
+aluno = { "Ingles" :  [9.5],
+          "Matématica": [5.7],
+          "Português": [7.5],
+          "Sociologia": [8.5] }
+
+for i in sorted(aluno, key = aluno.get): 
+    print(i,aluno[i])
+
+# Exercício 4 
+
+biblioteca = [
+    livro1 := { 
+                "Titulo": "Besibolbat",
+                "Autor" : "Rodrigo Goes",
+                "Ano" : "2023"},
+
+
+    livro2 := {
+                "Titulo": "Ai pai, para",
+                "Autor" : "Ze da Mangá",
+                "Ano" : "2023"},
+            
+    livro3 := {
+                "Titulo": "Pimenta, paralelepipedo e Jirobas",
+                "Autor" : "Astolfo Primeiro",
+                "Ano" : "2023"}
+            
+]
+
+
+print(biblioteca[0])
+print(biblioteca[1])
+print(biblioteca[2])
+
+# Exercício 5 
+
+lst =[75, 89, 92, 78, 85]
+
+lst.append(95)
+lst.pop(1)
+
+print(lst)
+
+# Exercício 6
+
+filme = { 
+    "Título": "A Ghost Story",
+    "Autor": "David Lowery",
+    "Lançamento": "2017"}
+    
+filme["Autor"] = "Danillo"
+
+print(filme)
+
+# Exercício 7
+
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+dobro = [numero * 2 for numero in lista]
+            
+print(dobro)
+
+#Exercício 8
+
+funcionarios = [
+    func1 := { 
+                "Nome": "Adriano",
+                "Cargo" : "Memeiro",
+                "Salário" : 4000.0},
+
+
+    func2 := {
+                "Nome": "José",
+                "Cargo" : "Fumadô",
+                "Salário" : 5000.0},
+            
+    func3 := {
+                "Nome": "Sócrates",
+                "Cargo" : "Se clona",
+                "Salário" : 6000.0}
+            
+]
+
+
+func2['Salário'] = func2['Salário'] + (func2['Salário'] * 0.1)
+
+print(func2['Salário'])
+
+# Exercício 9
+
+palavras = ['ADS', 'Filme', 'Chamada']
+
+palavras_maiores = [palavra for palavra in palavras if len(palavra) > 5]
+
+print(palavras_maiores)
+
+# Exercício 10
+
+musica = { 
+    "Título": "Blinding Lights",
+    "Autor": "The Weeknd",
+    "Genêro": "Pop"}
+
+key, value = 'Duração', 3.44
+
+musica[key] = value
+
+print(musica)
